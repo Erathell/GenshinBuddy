@@ -3,13 +3,44 @@ body{
     background-image: url(images/archons.jpg);
     background-size: cover;
 }
-
+img{
+    max-width: 100%;
+}
 .header{
     display: flexbox;
     background-color: hsla(0, 0%, 0%, 0.589);
     height: auto;
-    margin: 0%;
+    margin: 0px;
+    margin-bottom: 150px;
 }
+.content{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+.welcome-box{
+    width: 1200px;
+    height: 600px;
+    background-color: hsla(0, 0%, 0%, 0.589);
+    border-radius: 25px;
+    display: flex;
+    padding: 32px;
+}
+
+.welcome-box-1, .welcome-box-2{
+    box-sizing: border-box;
+    width: 579px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px;
+}
+
+.welcome-box-2{
+    gap: 50px;
+    justify-content: space-around;
+}
+
 
 .left, .right{
     display: flex;
