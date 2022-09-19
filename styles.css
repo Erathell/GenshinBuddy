@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    background-image: url(images/archons.jpg);
+    background-size: cover;
+}
+
+.header{
+    display: flexbox;
+    background-color: hsla(0, 0%, 0%, 0.589);
+    height: auto;
+    margin: 0%;
+}
+
+.left, .right{
+    display: flex;
+    padding: 16px 24px;
+    
+}
