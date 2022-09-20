@@ -41,4 +41,10 @@ img{
     justify-content: space-around;
 }
 
-
+.left, .right{
+    align-items: center;
+    flex-grow: 0;
+    padding-top: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
