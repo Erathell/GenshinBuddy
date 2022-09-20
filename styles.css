@@ -6,7 +6,7 @@
     src: url(fonts/ja-jp.ttf);
 }
 a{ color: white;
-    font-family: de;
+    font-family: default_sc;
 }
 a:link { text-decoration: none; }
 
@@ -14,7 +14,12 @@ a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
 
 
-a:hover { text-decoration: none; }
+a:hover { text-decoration: none; 
+    text-shadow: 0 0 10px rgb(82, 206, 0),
+    0 0 24px rgb(82, 206, 0),
+    0 0 48px rgb(82, 206, 0),
+    0 0 96px rgb(82, 206, 0);
+}
 
 
 a:active { text-decoration: none; }
@@ -34,11 +39,9 @@ img{
 
 
 
-li{
-    font-family: default_sc, "Times New Roman";
-}
 .header{
     display: flex;
+    width: 100%;
     flex-shrink: 0;
     background-color: hsla(0, 0%, 0%, 0.589);
     height: auto;
@@ -53,8 +56,7 @@ li{
 }
 .welcome-box{
     display: flex;
-    flex-shrink: 0;
-    width: 1200px;
+    width: 60%;
     height: 600px;
     background-color: hsla(0, 0%, 0%, 0.589);
     border-radius: 25px;
@@ -63,7 +65,7 @@ li{
 
 .welcome-box-left, .welcome-box-right{
     box-sizing: border-box;
-    width: 579px;
+    width: 579vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,9 +74,12 @@ li{
 
 .welcome-box-right{
     gap: 50px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
+.welcome-box-hr{
+    width: 100%;
+}
 .ul.no-bullets, .menu-list{
     list-style-type: none; 
     padding: 0; 
@@ -90,12 +95,18 @@ li{
     text-align: center;
 }
 
+
+li{
+    font-family: default_sc, "Times New Roman";
+    font-size: 0.8em;
+}
 li:hover{
     text-shadow: 0 0 10px rgb(82, 206, 0),
                 0 0 24px rgb(82, 206, 0),
         0 0 48px rgb(82, 206, 0),
         0 0 96px rgb(82, 206, 0);
 }
+
 .left, .right{
     display: flex;
     width: 100px;
@@ -104,6 +115,11 @@ li:hover{
     padding-left: 24px;
     padding-right: 24px;
     flex-basis: 50%;
+}
+
+.right{
+    justify-content: flex-end;
+    font-size: 1.5em;
 }
 
 
